@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel Doan | Rutgers Business School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --shell: #FFF8F7;
+            --blushing-petal: #FCE4E4;
+            --dusty-rose: #D89B9B;
+            --graphite: #333333;
+            --muted-mauve: #8E7C7C;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--shell); color: var(--graphite); font-family: 'Inter', sans-serif; line-height: 1.6; }
+
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-bottom: 25px;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 10px 25px rgba(216, 155, 155, 0.2);
+        }
+
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 0.9rem; letter-spacing: 4px; text-transform: uppercase; color: var(--muted-mauve); text-align: center; }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto 5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-gap: 25px;
+            padding: 0 2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 24px;
+            border: 1px solid rgba(216, 155, 155, 0.1);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background-color: var(--blushing-petal);
+            border-color: var(--dusty-rose);
+        }
+
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; margin-bottom: 1.5rem; color: var(--dusty-rose); text-transform: lowercase; font-style: italic; }
+        .job-title { font-weight: 600; color: var(--graphite); display: block; margin-top: 10px; }
+        .company { color: var(--muted-mauve); font-size: 0.85rem; display: block; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        ul { list-style: none; font-size: 0.9rem; }
+        li { margin-bottom: 10px; position: relative; padding-left: 20px; color: #555; }
+        li::before { content: "—"; color: var(--dusty-rose); position: absolute; left: 0; }
+
+        .btn {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            border: 1px solid var(--dusty-rose);
+            color: var(--dusty-rose);
+            text-decoration: none;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: var(--dusty-rose); color: white; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="assets/picture.jpeg.jpg" alt="Rachel Doan" class="profile-img">
+        <h1>Rachel Doan</h1>
+        <p class="subtitle">Accounting Student<br>Rutgers Business School</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>education</h2>
+            <p class="job-title">Rutgers, The State University of New Jersey [cite: 5]</p>
+            <p class="company">Rutgers Business School | B.S. in Accounting | May 2027 [cite: 6]</p>
+            <p style="font-size: 0.85rem; color: var(--muted-mauve); margin-top: 10px;">
+                <strong>Technical Skills:</strong> OSAS Accounting Software, Intermediate Microsoft Excel [cite: 8, 9]
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>professional experience</h2>
+            <span class="job-title">Accounting Clerk [cite: 11]</span>
+            <span class="company">New Brunswick Parking Authority | 2026 – Present [cite: 11]</span>
+            <ul>
+                <li>Record daily transactions including revenue from tickets and summons [cite: 12]</li>
+                <li>Ensure checks are deposited and recorded accurately [cite: 13]</li>
+                <li>Assist with AR accounts [cite: 13]</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>leadership & skills</h2>
+            <span class="job-title">To-Go Specialist & Team Lead [cite: 15, 25]</span>
+            <span class="company">Service Industry Impact [cite: 14, 22]</span>
+            <ul>
+                <li>Trained over 30 employees to prepare orders accurately [cite: 26]</li>
+                <li>Led 3 team members during peak operational hours [cite: 26]</li>
+                <li>Managed 50+ transactions daily using POS systems [cite: 16]</li>
+                <li>Collaborated with 14 associates to improve customer experience [cite: 20]</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>connect</h2>
+            <p style="font-size: 0.85rem; margin-bottom: 1rem;">Budd Lake, NJ [cite: 3]</p>
+            <a href="mailto:racheld5481@gmail.com" class="btn">Email Rachel [cite: 4]</a>
+            <a href="https://www.linkedin.com/in/rachel-doan-a591002b4" class="btn" target="_blank">LinkedIn Profile [cite: 4]</a>
+        </div>
+    </div>
+
+</body>
+</html>
